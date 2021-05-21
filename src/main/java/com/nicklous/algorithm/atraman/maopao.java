@@ -9,4 +9,5 @@ package com.nicklous.algorithm.atraman;/*
  */
 
 public class maopao {
+
 }
