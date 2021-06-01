@@ -1,4 +1,4 @@
-package com.nicklous.algorithm.atraman;/*
+package com.nicklous.algorithm.Easy;/*
  * @AUTHOR   LiXiang
  * @Classname WrongCollection
  *
@@ -8,13 +8,11 @@ package com.nicklous.algorithm.atraman;/*
  * @userName
  */
 
-import javax.crypto.spec.PSource;
-import java.util.Arrays;
+public class WrongCollection_645 {
 
-public class WrongCollection {
     public static void main(String[] args) {
         int[] nums = new int[]{3,2,3,4,5,6};
-        WrongCollection rc  = new WrongCollection();
+        WrongCollection_645 rc  = new WrongCollection_645();
         int[] result=rc.Solution(nums);
         System.out.println(result[0]);
         System.out.println(result[1]);
@@ -28,13 +26,11 @@ public class WrongCollection {
         int[] result = new int[2];
         for (int i=0;i<nums.length;i++){
             if (counter[i]==0){
-                result[0]=i;
-            }else if (counter[i]==2){
                 result[1]=i;
+            }else if (counter[i]==2){
+                result[0]=i;
             }
         }
         return result;
     }
-
-
 }
