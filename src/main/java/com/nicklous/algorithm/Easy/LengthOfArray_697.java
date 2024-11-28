@@ -71,7 +71,7 @@ public class LengthOfArray_697 {
 
         //1.对数组进行遍历，得到每个数出现的次数，第一次出现的位置，最后一次出现的位置
         //2.对步骤一的结果进行遍历，计算出现次数最多的数，该数第一次出现和最后一次出现的位置差。
-        Map<Integer ,int[]> map = new HashMap<>();
+        Map<Integer ,int[]> map = new HashMap();
         for (int i = 0; i < nums.length; i++) {
             if (map.containsKey(nums[i])){
                 map.get(nums[i])[0]++;
